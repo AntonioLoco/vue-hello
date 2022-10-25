@@ -12,7 +12,16 @@
 </head>
 <body>
     <div id="app">
-        
+        <!-- Form Nome -->
+        <label for="user-name">Inserisci il tuo nome</label>
+        <input type="text" id="user-name" v-model="userName">
+
+        <button @click="greet">Salutami</button>
+
+        <h1> {{greetingMessage}} </h1>
+
+        <!-- Foto -->
+        <img :src="imageUrl" :alt="imgAlt">
     </div>
 
     <!-- Script -->
